@@ -11,8 +11,7 @@ export class DishdetailComponent implements OnInit {
 
 
 
-  @Input()
-  dish: Dish;
+  @Input() dish: Dish;
 
   constructor() { }
 
