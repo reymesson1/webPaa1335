@@ -2,7 +2,7 @@
      fxLayout="row"
      fxLayout.sm="column"
      fxLayout.xs="column"
-     fxLayoutAlign.gt-md="space-around center"
+     fxLayoutAlign.gt-mat="space-around center"
      fxLayoutGap="10px">
 
 <mat-card *ngIf="dish" fxFlex>
@@ -32,5 +32,20 @@
     </p>
   </mat-card-content>
 </mat-card>
+
+<mat-card *ngIf="maybeFeaturedLeader" fxFlex>
+  <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>
+          <h3>{{maybeFeaturedLeader.name | uppercase}}</h3>
+      </mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src={{maybeFeaturedLeader.image}} alt={{maybeFeaturedLeader.name}}>
+  <mat-card-content>
+      <h4>{{ maybeFeaturedLeader.designation }}</h4>
+      <p>{{ maybeFeaturedLeader.description }}</p>
+  </mat-card-content>
+</mat-card>
+
 
 </div>
