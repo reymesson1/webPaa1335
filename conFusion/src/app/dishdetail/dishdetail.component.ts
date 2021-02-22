@@ -13,7 +13,7 @@ import { Location } from '@angular/common';
 
 export class DishdetailComponent implements OnInit {
 
-  dish: Dish;
+  dish: any;
 
   constructor(private dishservice: DishService,
     private route: ActivatedRoute,
@@ -23,6 +23,9 @@ export class DishdetailComponent implements OnInit {
     var id : any = +this.route.snapshot.params['id'];
     console.log(id);
     this.dish = this.dishservice.getDish(id);
+    // this.dishservice.getDishes()
+    // .then(dishes => this.dishes = dishes);
+
     console.log(this.dish);
   }
 
