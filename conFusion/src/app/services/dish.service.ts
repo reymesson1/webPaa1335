@@ -11,40 +11,32 @@ export class DishService {
 
   constructor() { }
 
-  getDishes(): Observable<Dish[]> {
-
-  // getDishes(): Promise<Dish[]> {
+  getDishes(): Promise<Dish[]> {
     // return new Promise(resolve=> {
     //   // Simulate server latency with 2 second delay
     //     setTimeout(() => resolve(DISHES), 2000);
     // });
     // return Promise.resolve(DISHES);
-    // return of(DISHES).pipe(delay(2000)).toPromise();
-    return of(DISHES).pipe(delay(2000));
+    return of(DISHES).pipe(delay(2000)).toPromise();
+
   }
 
-  getDish(id: number): Observable<Dish> {
-
-  // getDish(id: number): Promise<Dish> {
+  getDish(id: number): Promise<Dish> {
     // return new Promise(resolve=> {
     //   // Simulate server latency with 2 second delay
     //     setTimeout(() => resolve(DISHES.filter((dish) => (dish.id === id))[0]), 2000);
     // });
     // return Promise.resolve(DISHES.filter((dish) => (dish.id === id))[0]);
-    // return of(DISHES.filter((dish) => (dish.id === id))[0]).pipe(delay(2000)).toPromise();
-    return of(DISHES.filter((dish) => (dish.id === id))[0]).pipe(delay(2000));
-
+    return of(DISHES.filter((dish) => (dish.id === id))[0]).pipe(delay(2000)).toPromise();
 
   }
 
-  getFeaturedDish(): Observable<Dish> {
-  // getFeaturedDish(): Promise<Dish> {
+  getFeaturedDish(): Promise<Dish> {
     // return  new Promise(resolve=> {
     //   // Simulate server latency with 2 second delay
     //     setTimeout(() => resolve(DISHES.filter((dish) => dish.featured)[0]), 2000);
     // });
-    // return of(DISHES.filter((dish) => dish.featured)[0]).pipe(delay(2000)).toPromise();
-    return of(DISHES.filter((dish) => dish.featured)[0]).pipe(delay(2000));
+    return of(DISHES.filter((dish) => dish.featured)[0]).pipe(delay(2000)).toPromise();
 
   }
   
