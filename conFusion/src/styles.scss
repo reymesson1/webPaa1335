@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import 'variables';
-// @import '../node_modules/font-awesome/scss/font-awesome';
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+  // I can remember what was correct:
+
+  // @import '../node_modules/bootstrap/scss/bootstrap.scss';
+  // @import '../node_modules/font-awesome/fontawesome-free/css/all.css';
+
+  // @import '../node_modules/font-awesome/scss/font-awesome';
 
 body {
     padding: 0;
