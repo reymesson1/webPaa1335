@@ -28,6 +28,7 @@ export class DishdetailComponent implements OnInit {
 
     console.log(this.dish);
   }
+  // Exercise (Instructions): Angular and RxJS Part 2
 
   goBack(): void {
     this.location.back();
