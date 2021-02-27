@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 import { Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
@@ -34,6 +35,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatSliderModule} from '@angular/material/slider';
+import { baseURL } from './shared/baseurl';
 
 
 
@@ -68,9 +70,12 @@ import {MatSliderModule} from '@angular/material/slider';
     MatSlideToggleModule,
     ReactiveFormsModule,
     MatProgressSpinnerModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientModule
   ],
-  providers: [DishService, PromotionService, LeaderService],
+  providers: [DishService, PromotionService, LeaderService,
+    {provide: 'BaseURL', useValue: baseURL}
+  ],
   bootstrap: [AppComponent],
   entryComponents: [
     LoginComponent
