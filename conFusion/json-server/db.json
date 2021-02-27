@@ -224,5 +224,26 @@
       "description": "Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!"
     }
   ],
-  "feedback": []
+  "feedback": [
+    {
+      "firstname": "Rey",
+      "lastname": "Messon",
+      "telnum": "8297488769",
+      "email": "reymesson@gmail.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "test",
+      "id": 1
+    },
+    {
+      "firstname": "Rey",
+      "lastname": "Messon",
+      "telnum": "8230239109",
+      "email": "remeones@gmail.com",
+      "agree": null,
+      "contacttype": null,
+      "message": "tetst",
+      "id": 2
+    }
+  ]
 }
